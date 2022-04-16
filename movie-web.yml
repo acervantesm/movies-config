@@ -3,4 +3,9 @@ spring:
     console:
       enabled: true
 movie-web:
-  path: /v1/movie
+  path: http://localhost:8181/v1/movie
+  
+  eureka:
+    client:
+      service-url:
+        default-zone: http://localhost:8761/eureka/
